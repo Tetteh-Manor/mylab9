@@ -1,11 +1,13 @@
 function init(){
-//add your javascrip between these two lines of code
- 
+//add your javascript between these two lines of code
+var button = document.getElementById('entrybutton');
 
+function showMeText(){
+  var textbox = document.getElementById('entryinput');
+  document.getElementById('textoutput').innerHTML = textbox.value;
+  alert("Bezaleel T. Manor: " + textbox.value);
+}
 
-
-
-
-
-
-window.addEventListener('load', init);
+button.addEventListener('click', showMeText);
+}
+window.addEventListener('load', init); 
